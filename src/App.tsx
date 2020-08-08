@@ -2,10 +2,8 @@ import React from 'react';
 import Routes from './routes/index';
 import './assets/styles/global.css';
 
-function App() {
-  return (
-    <Routes />
-  );
-}
+const App: React.FC = () => (
+  <Routes />
+);
 
 export default App;
