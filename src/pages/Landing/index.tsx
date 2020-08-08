@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/logo.svg';
 import LandingImg from '../../assets/images/landing.svg';
 
@@ -6,10 +7,9 @@ import studyIcon from '../../assets/images/icons/study.svg';
 import givyClassIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
-import { Link } from 'react-router-dom';
-
 import './styles.css';
 import './stylesAdaptation.css';
+
 const Landing: React.FC = () => (
   <div id="page-landing">
     <div id="page-landing-content" className="container">

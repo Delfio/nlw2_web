@@ -9,22 +9,20 @@ interface HeaderProps {
     title: string;
 }
 
-const Header: React.FC<HeaderProps> = ({title, children}) => {
-  return (
-    <header className="page-header">
-        <div className="top-bar-container">
-            <Link to="/">
-                <img src={backIcon} alt="logo-proffy"/>
-            </Link>
-            <img src={LogoImg} alt=""/>
-        </div>
-        <div className="header-content">
-            <strong>{title}</strong>
-            {children}
-        </div>
+const Header: React.FC<HeaderProps> = ({ title, children }) => (
+  <header className="page-header">
+    <div className="top-bar-container">
+      <Link to="/">
+        <img src={backIcon} alt="logo-proffy" />
+      </Link>
+      <img src={LogoImg} alt="" />
+    </div>
+    <div className="header-content">
+      <strong>{title}</strong>
+      {children}
+    </div>
 
-    </header>
-  );
-}
+  </header>
+);
 
 export default Header;
